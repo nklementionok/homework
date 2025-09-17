@@ -1,0 +1,58 @@
+plugins {
+        id 'java'
+    }
+build.gradle dependencies {
+    testRuntime("org.junit.jupiter:junit-jupiter-api:5.8.1")
+    testRuntime("org.junit.jupiter:junit-jupiter-engine:5.8.1")
+    testRuntime("org.junit.jupiter:junit-jupiter-params:5.8.1")
+    testRuntime("org.junit.platform:junit-platform-suite:1.8.1")
+}
+test {
+    useJUnitPlatform()
+
+testImplementation 'org.testng:testng:7.10.2'
+}
+
+dependencies {
+    // JUnit 5
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.10.0' // Или актуальная версия
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.10.0' // Или актуальная версия
+
+    // TestNG
+    testImplementation 'org.testng:testng:7.8.0' // Или актуальная версия
+}
+
+ dependencies {
+            testImplementation 'org.testng:testng:7.x.x' // Use a stable version
+        }
+
+dependencies {
+        // Main REST Assured library
+        testImplementation 'io.rest-assured:rest-assured:5.4.0' // Use the latest version
+
+        // Optional: For JSON Schema validation
+        testImplementation 'io.rest-assured:json-schema-validator:5.4.0' // Use the latest version
+
+        // Optional: For Spring MockMvc integration
+        // testImplementation 'io.rest-assured:spring-mock-mvc:5.4.0' // Use the latest version
+
+        // Optional: For Kotlin extension module (if using Kotlin)
+        // testImplementation 'io.rest-assured:kotlin-extensions:5.4.0' // Use the latest version
+
+        // Add your test framework dependency (e.g., JUnit 5)
+        testImplementation 'org.junit.jupiter:junit-jupiter-api:5.10.0' // Use the latest version
+        testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.10.0' // Use the latest version
+    }
+
+    // Configure JUnit 5 if using it
+    test {
+        useJUnitPlatform()
+    }
+
+dependencies {
+        testImplementation'io.rest-assured:rest-assured:5.5.5' // Use the latest stable version
+    }
+
+// https://mvnrepository.com/artifact/io.rest-assured/rest-assured
+testImplementation("io.rest-assured:rest-assured:5.5.5")
+ 
